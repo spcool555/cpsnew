@@ -50,5 +50,5 @@ Feel free to fork the project and open pull requests.
 
 GPL-3.0 License
 
-[url]: <https://cps-tester-app.netlify.app>
+[url]: <https://rynidja.github.io/cps-tester/>
 [issues]: <https://github.com/rynidja/cps-tester/issues>
