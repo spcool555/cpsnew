@@ -10,13 +10,11 @@
 	};
 
 	// github contributors promise
-	async function getContributors(repo: `${string}/${string}`) {
-		// fetch the github api
-		const res = await fetch(`https://api.github.com/repos/${repo}/contributors`);
+	async function getContributors() {
+		const res = await fetch(`https://api.github.com/repos/rynidja/cps-tester/contributors`);
 		const contributors: response[] = await res.json();
 
 		if (res.ok) {
-			// return contributors if response is ok (res code == 200)
 			return contributors;
 		} else {
 			throw new Error();
@@ -25,14 +23,17 @@
 </script>
 
 <PopUp bind:shown={$aboutTab} bg="#080c0d">
-	<div class="about" slot="display">
+	<div class="about-Pu" slot="display">
 		<section class="about">
 			<h3>About :</h3>
 			<p>
 				The main idea that led to this website is the "In-Time CPS Test" which we couldn't find in
 				other websites. So we decided to make it and get some web developement experience with it.
 			</p>
-			<p class="dev-stuff">
+		</section>
+		<section class="dev-stuff">
+			<h3>Developement :</h3>
+			<p>
 				The project started as a <a href="https://python.org">python</a> app written with
 				<a href="https://github.com/hoffstadt/DearPyGui"> dearpygui</a>
 				then as a dynamic website written with <a href="https://flask.palletsprojects.com">flask</a>
@@ -53,25 +54,25 @@
 			<p class="a">It is: ((2^31 -1) /1000) s or 2,147,483 seconds or about 24.8 days 😲!</p>
 			<br />
 		</section>
-		<section class="credits">
+		<section class="contributors-list">
 			<h3>Contributors :</h3>
 			<div class="contributors">
-				{#await getContributors('rynpix/cps-tester')}
+				{#await getContributors()}
 					Loading contributors...
 				{:then contributors}
 					{#each contributors as contributor}
-						<a href={contributor.html_url}
-							><img
+						<a href={contributor.html_url}>
+							<img
 								class="c-img"
 								src={contributor.avatar_url}
 								alt={contributor.login}
 								width="52"
 								height="52"
-							/></a
-						>
+							/>
+						</a>
 					{/each}
 				{:catch}
-					Failed to load contributers.
+					Failed to load contributors.
 				{/await}
 			</div>
 		</section>
@@ -79,12 +80,10 @@
 </PopUp>
 
 <style>
-	.about {
-		text-align: center;
-		font-size: 1.05rem;
-	}
 	section {
-		margin: 0.5rem;
+		margin: 1em;
+		font-size: 1.05rem;
+		text-align: center;
 	}
 	h3 {
 		margin-bottom: 0.5em;
@@ -112,25 +111,9 @@
 	.c-img {
 		border-radius: 50%;
 	}
-	@media (max-width: 730px) {
-		.about {
-			font-size: 1em;
-		}
-		section {
-			margin: 0.2em;
-		}
-	}
-	@media (max-width: 635px) and (min-width: 620px) {
+	@media (max-width: 635px) {
 		.dev-stuff {
 			display: none;
-		}
-	}
-	@media (max-width: 510px) {
-		.dev-stuff {
-			display: none;
-		}
-		section {
-			margin: 0.5em;
 		}
 	}
 </style>

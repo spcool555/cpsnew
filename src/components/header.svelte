@@ -46,6 +46,7 @@
 		background: #1a1f21;
 	}
 	.brand {
+		text-align: center;
 		grid-column: 1/2;
 		font-size: 1.75em;
 	}

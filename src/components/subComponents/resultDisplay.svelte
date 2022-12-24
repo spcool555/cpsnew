@@ -8,7 +8,7 @@
 		// set enable button timeout
 		const enableTimeout = setTimeout(() => {
 			node.disabled = false;
-		}, 400);
+		}, 800);
 		return {
 			destroy: () => {
 				// clear the enableTimeout on Destroy

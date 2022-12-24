@@ -29,8 +29,9 @@
 	.close-btn {
 		font-size: 1.5em;
 		color: red;
-		margin: 0.2em;
+		margin: 0.2em 0.5em;
 		font-weight: bold;
+		font-family: cursive;
 	}
 	.active {
 		display: block;

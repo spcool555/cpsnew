@@ -6,18 +6,19 @@ You can try it [here][url].
  
 
 ## Features !
+<!-- --- -->
+
   - In-Time cps testing
   - Timed tests
   - Custom Timed tests
   - Responsive design
 
-
-Development Guide
-----
+---
+### Development Guide
 
   - Clone the project
 
-    `git clone https://github.com/rynpix/cps-tester`
+    `git clone https://github.com/rynidja/cps-tester`
 
   - Install dev dependencies:
     `npm install`
@@ -35,22 +36,19 @@ Development Guide
     `npm run preview`
 
 
-Bugs Tracking
-----
+### Bugs Tracking
 
 Feel free to report bugs and issues or request new features on the [Issues tab][issues].
 
 
-Contribute
-----
+### Contribute
 
 Feel free to fork the project and open pull requests.
 
 
-License
-----
+### License
 
 GPL-3.0 License
 
 [url]: <https://cps-tester-app.netlify.app>
-[issues]: <https://github.com/rynpix/cps-tester/issues>
+[issues]: <https://github.com/rynidja/cps-tester/issues>

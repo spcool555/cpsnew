@@ -69,13 +69,16 @@
 		text-align: center;
 	}
 	.navbar-nav li {
+		height: 100%;
 		list-style: none;
-		margin: 0 1em;
 	}
 	a {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		background: #586267;
-		display: block;
-		padding: 5% 0;
+		font-size: 1.125em;
 	}
 	a:hover {
 		background: #495257;
@@ -107,6 +110,7 @@
 	@media (max-width: 620px) {
 		.navbar-nav {
 			background: #1a1f21;
+			padding-bottom: .2em;
 		}
 		a {
 			padding: 2% 0;
