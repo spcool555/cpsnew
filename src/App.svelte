@@ -9,7 +9,7 @@
 	setContext('updateDelay', $$props.updateDelay);
 </script>
 
-<svelte:window bind:innerWidth={windowWidth} on:click={() => ($showDropDown=false) />
+<svelte:window bind:innerWidth={windowWidth} />
 
 <header>
 	<Header navBar={windowWidth < 620}>
