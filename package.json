@@ -1,9 +1,10 @@
 {
+	"homepage":"https://spcool555.github.io/cpsnew.git",
 	"name": "cps-tster",
 	"version": "1.0.0",
 	"scripts": {
-		"predeploy" : "npm run build",
-		"deploy" : "gh-pages -d dist",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"dev": "vite --host",
 		"build": "vite build",
 		"preview": "vite preview --host",
