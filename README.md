@@ -16,9 +16,6 @@ You can try it [here][url].
 ---
 ### Development Guide
 
-  - Clone the project
-
-    `git clone https://github.com/rynidja/cps-tester`
 
   - Install dev dependencies:
     `npm install`
