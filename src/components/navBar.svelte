@@ -110,7 +110,7 @@
 	@media (max-width: 620px) {
 		.navbar-nav {
 			background: #1a1f21;
-			padding-bottom: .2em;
+			padding-bottom: 0.2em;
 		}
 		a {
 			padding: 2% 0;

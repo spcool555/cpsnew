@@ -3,8 +3,6 @@
 </script>
 
 <!-- svelte-ignore a11y-missing-attribute -->
-
-
 <style>
 	:global(footer) {
 		display: flex;

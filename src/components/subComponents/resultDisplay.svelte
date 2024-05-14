@@ -25,7 +25,7 @@
 		>
 	</div>
 </PopUp>
-	
+
 <style>
 	.result {
 		display: flex;
